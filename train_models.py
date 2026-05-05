@@ -238,8 +238,8 @@ def generate_text(
     model: TextGenerator,
     data: TokenData,
     device: torch.device,
-    length: int = 120,
-    temperature: float = 0.8,
+    length: int = 200,
+    temperature: float = 1.0,
 ) -> str:
     model.eval()
     generated = prepare_seed(data)
